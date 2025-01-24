@@ -5,7 +5,7 @@
 Возможности API:
 
 ```c#
-public class PlayerSettings //Используется для получения/обновления конфигов
+public class PlayerSettings //Используется для получения/обновления настроек игрока
 {
   public int Amount { get; set; } = 5;
   public int Limit { get; set; } = -1;
