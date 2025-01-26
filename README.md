@@ -32,7 +32,7 @@ public interface IThrowingKnivesSharedAPI
 }
 ```
 
-# Настройки для VIP модуля:
+# Настройки для VIP группы:
 ```Json
 "ThrowingKnives":
 {
