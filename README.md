@@ -31,3 +31,21 @@ public interface IThrowingKnivesSharedAPI
   public PlayerSettings GetSettings(CCSPlayerController player);                   // Получение настроек
 }
 ```
+
+# Настройки для VIP модуля:
+```Json
+"ThrowingKnives":
+{
+  "Amount": 5,
+  "Limit": -1,
+  "Steal": false,
+  "Velocity": 1200,
+  "Damage": 60,
+  "ModelScale": 1,
+  "Gravity": 1,
+  "Elasticity": 0.3,
+  "Lifetime": 3,
+  "Spin": true,
+  "HeadshotDamage": 150
+}
+```
