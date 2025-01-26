@@ -8,36 +8,36 @@ namespace TK_VIPCSSharp;
 
 public class TK_VIPCSSharp : BasePlugin
 {
-    public override string ModuleName => "[VIP + TK] Throwing Knives";
-    public override string ModuleVersion => "1.0";
-    public override string ModuleAuthor => "VOLK_RuS";
+	public override string ModuleName => "[VIP + TK] Throwing Knives";
+	public override string ModuleVersion => "1.0";
+	public override string ModuleAuthor => "VOLK_RuS";
 	
 	private ThrowingKnives _ThrowingKnives = null!;
 	
 	private IVipCoreApi? _VipApi;    
-    private PluginCapability<IVipCoreApi> _VipCapability { get; } = new("vipcore:core");
+	private PluginCapability<IVipCoreApi> _VipCapability { get; } = new("vipcore:core");
 	
 	private IThrowingKnivesSharedAPI? _TKApi;
-    private readonly PluginCapability<IThrowingKnivesSharedAPI> _TKCapability = new("throwingknives:api");
+	private readonly PluginCapability<IThrowingKnivesSharedAPI> _TKCapability = new("throwingknives:api");
 	
 	public override void OnAllPluginsLoaded(bool hotReload)
-    {
-        _VipApi = _VipCapability.Get();
-        if (_VipApi == null) return;
-		
+	{
+		_VipApi = _VipCapability.Get();
+		if (_VipApi == null) return;
+			
 		_TKApi = _TKCapability.Get();
-        if (_TKApi == null) return;
-		
+		if (_TKApi == null) return;
+			
 		_ThrowingKnives = new ThrowingKnives(_VipApi);
 		_VipApi.RegisterFeature(_ThrowingKnives);
-		
+			
 		_TKApi!.OnSettingsUpdate += OnSettingsUpdate;
-    }
+	}
 
-    public override void Unload(bool hotReload)
-    {
+	public override void Unload(bool hotReload)
+	{
 		_VipApi?.UnRegisterFeature(_ThrowingKnives);
-    }
+	}
 	
 	private void OnSettingsUpdate(CCSPlayerController player, PlayerSettings setts)
 	{
@@ -51,10 +51,10 @@ public class TK_VIPCSSharp : BasePlugin
 
 public class ThrowingKnives : VipFeatureBase
 {
-    public override string Feature => "ThrowingKnives";
+    	public override string Feature => "ThrowingKnives";
 
-    public ThrowingKnives(IVipCoreApi api) : base(api)
-    {
+	public ThrowingKnives(IVipCoreApi api) : base(api)
+	{
 		
 	}
 }
