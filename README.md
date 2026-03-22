@@ -1,7 +1,6 @@
 # Throwing Knives
 
-Приобрести приватную версию плагина можно как напрямую [VOLK_RuS](https://discord.com/users/222462171500642304), так и через дискорд канал [Stellar Team](https://discord.com/invite/stellarteam) в полу-автоматическом режиме.
-[прямая ссылка для покупки](https://stellarteam.store/resource/cs2-throwing-knives)
+Приобрести приватную версию плагина можно напрямую в discord [VOLK_RuS](https://discord.com/users/222462171500642304)
 
 В версии 2.0 появился новый параметр, позволяющий изменить кнопку броска — "KnifeThrowButton": 1, где 1 - это левая кнопка мыши
 
